@@ -1,28 +1,54 @@
-# AI-CRISPR-sgRNA-Designer
- AI-based sgRNA prediction using machine learning
-# AI-CRISPR sgRNA Designer
+**AI-CRISPR sgRNA Designer**
 
-AI-based sgRNA prediction using machine learning.
+An AI-powered CRISPR sgRNA design tool that identifies and ranks candidate sgRNAs from DNA sequences using machine learning-based efficiency prediction.
 
-## Features
-- Doench dataset based training
-- Nested cross validation
-- Model comparison
-- External validation
-- Biological sequence testing
+**Project Overview**
 
-## Models Used
-- Random Forest
-- XGBoost
-- Gradient Boosting
-- SVM
+This project takes a DNA sequence as input and:
 
-## Dataset
-Doench 2016 sgRNA dataset
+Identifies potential sgRNA candidates
+Extracts biological features
+Predicts cutting efficiency using ML
+Ranks Top sgRNA candidates
+Visualizes results
 
-## Results
-Best Model: Random Forest  
-Performance: High accuracy on external dataset
+This tool helps researchers design efficient CRISPR guide RNAs quickly and effectively.
+
+**🔬 Features**
+
+✅ DNA sequence input
+
+✅ PAM sequence detection (NGG)
+
+✅ sgRNA candidate extraction
+
+✅ Feature engineering
+
+✅ Machine learning prediction
+
+✅ Ranking Top sgRNAs
+
+✅ Visualization (Graph Output)
+
+✅ Clean pipeline workflow
+
+**Example Workflow**
+
+Input DNA Sequence
+        ↓
+PAM Detection
+        ↓
+sgRNA Candidate Extraction
+        ↓
+Feature Extraction
+        ↓
+ML Prediction
+        ↓
+Ranking
+        ↓
+Visualization
+
+
 ## Results
 
 ![Results](Result Graph.png)
@@ -35,10 +61,68 @@ Performance: High accuracy on external dataset
 
 ![Pipeline](Pipeline output.png)
 
+
+**Example DNA Sequence**
+
+You can test using this example:
+GAGTCCGAGCAGAAGAAGAAGGGCTCCCATCACATCAACCGGTGGCGGCGGCGGCGGCGGCGG
+CGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGG
+
+**Installation**
+
+Clone the repository:
+
+git clone https://github.com/parthkhedu38-sudo/AI-CRISPR-sgRNA-Designer.git
+
+Go to project folder:
+
+cd AI-CRISPR-sgRNA-Designer
+
+Install dependencies:
+
+pip install -r requirements.txt
+
 ## How to Run
-1. Open notebook in Google Colab
-2. Upload dataset
-3. Run all cells
+How to Run
+
+Run the main script:
+
+python main.py
+
+**Machine Learning Model**
+
+The model:
+
+Extracts sgRNA features
+Predicts efficiency
+Ranks candidates
+
+Model Type:
+
+Random Forest / ML Regression Model
+
+**Project Structure**
+
+AI-CRISPR-sgRNA-Designer
+│
+├── main.py
+├── requirements.txt
+├── README.md
+├── Result Graph.png
+├── Result N Rank.png
+└── Pipeline output.png
+
+**Future Improvements**
+
+Web Interface
+
+Off-target prediction
+
+Deep learning model
+
+Genome integration
+
+Batch sequence processing
 
 ## Author
 Parth Khedu
